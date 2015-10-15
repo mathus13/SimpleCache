@@ -1,6 +1,7 @@
 {
     "name": "ethereal/simpleCache",
     "type": "project",
+    "version": "0.0.1",
     "require": {
         "php": ">=5.3.9"
     },
