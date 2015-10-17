@@ -4,9 +4,15 @@ namespace Ethereal;
 
 use Predis\Client;
 
-class Cache extends Predis\Client
+class Cache extends Predis\Client implements Ethereal\Cache\Interface
 {
     protected $namespace = '';
+  	 protected $server;
+  
+    public function __construct($server)
+    {
+        $this->server = $server;
+    }
   
     public function set($key, $val, $exp = null)
     {
