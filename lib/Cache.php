@@ -4,7 +4,7 @@ namespace Ethereal;
 
 use Predis\Client;
 
-class Cache extends Predis\Client implements Ethereal\Cache\Interface
+class Cache extends Predis\Client implements Cache\CacheInterface
 {
     protected $namespace = '';
   	 protected $server;
