@@ -1,5 +1,5 @@
 <?php
-namespace Ethereal;
+namespace Ethereal\Cache;
 
 interface CacheInterface
 {
