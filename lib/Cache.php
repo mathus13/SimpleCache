@@ -9,8 +9,9 @@ class Cache extends \Predis\Client implements Cache\CacheInterface
     protected $namespace = '';
   	 protected $server;
   
-    public function __construct($server)
+    public function __construct(array $server)
     {
+        parent::__construct($server);
         $this->server = $server;
     }
   
